@@ -1,0 +1,287 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a, li, ul, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.home {
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px 30px;
+}
+
+.more {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.more ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.more ul li a {
+    padding: 0 5px;
+    text-decoration-line: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.more ul li a:hover {
+    border-bottom-color: #2BC4F3;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    transition-property: border font;
+    transition-duration: 50ms;
+    transition-timing-function: linear;
+}
+
+.brand {
+    min-width: 200px;
+    min-height: 80px;
+    height: auto;
+    background-image: url("../assets/brand.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contacts a {
+    padding: 0 10px;
+}
+
+.facebook a img, .whats a img {
+    width: 40px;
+    height: 40px;
+}
+
+.facebook a img:hover, .whats a img:hover {
+    width: 45px;
+    height: 45px;
+    transition-property: width heigth;
+    transition-duration: 50ms;
+    transition-timing-function: linear;
+}
+
+.fone {
+    color: #fff;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.fone h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.fone p a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.fone p a:hover {
+    font-size: 18px;
+    text-decoration-color: #2BC4F3;
+    transition-property: text-decoration;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+
+.content {
+    margin: 0 30px;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+.endereco p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    width: 130px;
+    border-bottom: #2BC4F3 solid 2px;
+    margin: 10px 0;
+}
+
+.sobre {
+    background-color: #fff;
+    background-image: url("../assets/logo-background.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    background-position-x: left;
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #040F16;
+    padding: 30px 30px;
+}
+
+.sobre .titles h1 {
+    font-size: 25px;
+    font-weight: normal;
+    box-shadow: #2BC4F3;
+}
+
+.sobre .titles h4 {
+    width: 110px;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 2px solid #2BC4F3;
+    border-radius: 1px;
+}
+
+.aboutus {
+    max-width: 400px;
+}
+
+.aboutus h1 {
+    color: rgba(4, 15, 22, .67);
+    font-weight: normal;
+    font-size: 22px;
+    padding: 30px 0;
+    text-align: end;
+}
+
+.aboutus span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #040F16;
+    border-bottom: #2BC4F3 solid 2px;
+}
+
+.aboutus p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #040F16;
+    text-align: justify;
+    padding: 10px;
+}
+
+.sobre main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .container {
+        background-size: cover;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        margin: 0;
+    }
+    .more, .more ul {
+        flex-direction: column;
+    }
+    .more ul li {
+        padding: 5px;
+    }
+    .more ul li a {
+        border-bottom: 2px solid;
+        border-bottom-color: #2BC4F3;
+    }
+    .brand {
+        min-height: 60px;
+    }
+    .contacts {
+        flex-direction: row;
+    }
+    .face, .whats {
+        padding: 10px
+    }
+    .contacts a {
+        width: 10px;
+        height: 10px;
+    }
+    .content {
+        margin: 0;
+        padding: 0 10px;
+        align-items: flex-start;
+    }
+    .endereco h4 {
+        display: none;
+        font-size: 16px;
+    }
+    .maps, .maps iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .sobre {
+        background-image: none;
+    }
+
+    .aboutus h1{
+        text-align: center;
+    }
+    .sobre main {
+        display: block;
+        padding: 0;
+    }
+
+
+}
